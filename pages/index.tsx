@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import TopBar from './../components/topbar'
-import styles from '../styles/Home.module.css'
-import { Button, Flex } from '@chakra-ui/react'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
+import { Button, Flex } from "@chakra-ui/react";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   //console.log("DEV", TopBar)
@@ -20,7 +19,6 @@ export default function Home() {
       <main className={styles.main}>
         <h1>HEllo devs</h1>
         <Button colorScheme="teal">Guys</Button>
-        <TopBar />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -32,7 +30,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -125,5 +123,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
