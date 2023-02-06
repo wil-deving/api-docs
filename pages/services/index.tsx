@@ -1,5 +1,5 @@
 import { Heading, Stack } from "@chakra-ui/react";
-import CodeField from "./../../components/CodeField";
+import CodeField from "../../components/CodeField/CodeField";
 
 const Services = () => {
   return (
