@@ -1,4 +1,4 @@
-import { Textarea, Text } from "@chakra-ui/react";
+import { Textarea, Text, Center } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface Atribute {
@@ -44,9 +44,9 @@ const CodeField = () => {
   };
 
   return (
-    <div>
+    <Center bg="black" h="100px" color="white">
       <ul>{properties()}</ul>
-    </div>
+    </Center>
   );
 };
 export default CodeField;
