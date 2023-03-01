@@ -44,6 +44,7 @@ import {
 import { ReactNode, useState } from "react";
 import CodeField from "../../components/CodeField/CodeField";
 import { AccessTable } from "../../components/AccessTable/AccessTable";
+import { ParameterField } from "../../components/ParameterField/ParameterField";
 import { FaBeer } from "react-icons/fa";
 import { PhoneIcon, AddIcon, WarningIcon, MinusIcon } from "@chakra-ui/icons";
 
@@ -157,21 +158,7 @@ const AccessLog = () => {
             </NumberInput>
           </Stack>
           <Divider orientation="horizontal" />
-          <Stack spacing={3} padding={10}>
-            <ButtonGroup size="sm" isAttached variant="outline">
-              <Button>Add parameter</Button>
-              <IconButton aria-label="Add to friends" icon={<AddIcon />} />
-              <IconButton aria-label="Add to friends" icon={<MinusIcon />} />
-            </ButtonGroup>
-            <SimpleGrid columns={2} spacing={5}>
-              <Input variant="outline" placeholder="Outline" />
-              <Input variant="outline" placeholder="Outline" />
-            </SimpleGrid>
-            <SimpleGrid columns={2} spacing={5}>
-              <Input variant="outline" placeholder="Outline" />
-              <Input variant="outline" placeholder="Outline" />
-            </SimpleGrid>
-          </Stack>
+          <ParameterField />
         </GridItem>
         <GridItem colSpan={2} rowSpan={2} bg="yellow">
           <SimpleGrid columns={3} spacing={5}>
